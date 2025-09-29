@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil e Serviços de Desenvolvimento Web | Pedro Henrique SIbien Cordeiro</title>
+    <!-- Carregamento do Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f4f7f9;
+        }
+        .section {
+            padding-top: 6rem; /* Espaço para o menu fixo */
+            padding-bottom: 4rem;
+        }
+        /* Efeito de hover profissional para os botões */
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navbar Fixa com Links Âncora -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-lg z-50">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-indigo-600 hover:text-indigo-800 transition duration-300">
+                Pedro Henrique SIbien Cordeiro | Dev
+            </a>
+            <div class="flex space-x-4 text-sm md:text-base">
+                <a href="#home" class="p-2 rounded-lg hover:bg-indigo-100 transition duration-300">Home</a>
+                <a href="#curriculo" class="p-2 rounded-lg hover:bg-indigo-100 transition duration-300">Currículo</a>
+                <a href="#github" class="p-2 rounded-lg hover:bg-indigo-100 transition duration-300">GitHub</a>
+                <a href="#servicos" class="p-2 rounded-lg hover:bg-indigo-100 transition duration-300">Serviços</a>
+                <a href="#contato" class="p-2 rounded-lg hover:bg-indigo-100 transition duration-300">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 1. PÁGINA PRINCIPAL / HOME -->
+    <section id="home" class="section bg-white">
+        <div class="container mx-auto px-4">
+            <div class="md:flex md:items-center md:space-x-12">
+                <!-- Coluna da Foto e Resumo -->
+                <div class="md:w-1/3 flex flex-col items-center mb-6 md:mb-0">
+                    <!-- Foto do Aluno (Usando a nova URL externa) -->
+                    <img src="https://yt3.googleusercontent.com/UO3K5lRzok8L_cZaua5g0rnZ1lmc-wx8yqiulqwb0iodcESAnnEERN1Ax-hUfh25UVhH6BpP=s160-c-k-c0x00ffffff-no-rj" alt="Foto de perfil do desenvolvedor" class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-xl border-4 border-indigo-500">
+                    <h1 class="text-4xl font-extrabold text-gray-900 mt-6">Olá, eu sou Pedro Henrique SIbien Cordeiro!</h1>
+                    <p class="text-lg text-indigo-600 font-medium">Desenvolvedor Focado em Resultados</p>
+
+                    <!-- Link para o Instagram (Adicionado) -->
+                    <a href="https://www.instagram.com/pedro.sibien_/#" target="_blank" class="mt-2 text-indigo-500 hover:text-indigo-700 transition duration-300 flex items-center">
+                        <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.01 4.851.071 1.171.056 1.831.258 2.224.417.382.155.65.344.912.607.262.262.452.53.607.912.159.393.361 1.053.417 2.224.061 1.267.071 1.647.071 4.851s-.01 3.584-.071 4.851c-.056 1.171-.258 1.831-.417 2.224-.155.382-.344.65-.607.912-.262.262-.53.452-.912.607-.393.159-1.053.361-2.224.417-1.267.061-1.647.071-4.851.071s-3.584-.01-4.851-.071c-1.171-.056-1.831-.258-2.224-.417-.382-.155-.65-.344-.912-.607-.262-.262-.452-.53-.607-.912-.159-.393-.361-1.053-.417-2.224-.061-1.267-.071-1.647-.071-4.851s.01-3.584.071-4.851c.056-1.171.258-1.831.417-2.224.155-.382.344-.65.607-.912.262-.262.53-.452.912-.607.393-.159 1.053-.361 2.224-.417C8.416 2.173 8.796 2.163 12 2.163zm0-2.163C8.75 0 8.333.014 7.05.071 5.766.128 4.793.333 3.996.657 3.199.982 2.593 1.488 2.08 2.001c-.513.513-1.019 1.12-1.343 1.917-.324.797-.53 1.77-.587 3.054C.014 8.249 0 8.666 0 12s.014 3.751.071 5.035c.057 1.284.263 2.257.587 3.054.324.797.83 1.403 1.343 1.917.513.513 1.12 1.019 1.917 1.343.797.324 1.77.53 3.054.587C8.249 23.986 8.666 24 12 24s3.751-.014 5.035-.071c1.284-.057 2.257-.263 3.054-.587.797-.324 1.403-.83 1.917-1.343.513-.513 1.019-1.12 1.343-1.917.324-.797.53-1.77.587-3.054.057-1.284.071-1.701.071-5.035s-.014-3.751-.071-5.035c-.057-1.284-.263-2.257-.587-3.054-.324-.797-.83-1.403-1.343-1.917-.513-.513-1.12-1.019-1.917-1.343-.797-.324-1.77-.53-3.054-.587C15.751.014 15.334 0 12 0zm0 5.835c-3.41 0-6.165 2.755-6.165 6.165s2.755 6.165 6.165 6.165 6.165-2.755 6.165-6.165S15.41 5.835 12 5.835zm0 10.165c-2.206 0-3.999-1.793-3.999-3.999s1.793-3.999 3.999-3.999 3.999 1.793 3.999 3.999-1.793 3.999-3.999 3.999zM19.155 3.393c-.495 0-.898.403-.898.898s.403.898.898.898.898-.403.898-.898-.403-.898-.898-.898z"/></svg>
+                        @pedro.sibien_
+                    </a>
+
+                    <a href="#contato" class="mt-4 cta-button bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700">
+                        Quero um Site Incrível!
+                    </a>
+                </div>
+
+                <!-- Coluna da História e Objetivos -->
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold mb-4 text-indigo-700 border-b-2 border-indigo-200 pb-2">Minha Jornada</h2>
+                    <!-- Breve Resumo da Sua História -->
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Minha paixão por tecnologia começou cedo. Sou um entusiasta da **inovação** e estou sempre em busca de soluções que transformem desafios em resultados práticos. Atualmente, meu principal objetivo é **investir e dar continuidade à minha própria Soft House**, focando em projetos de alta qualidade e impacto real no negócio dos clientes.
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Habilidades Pessoais -->
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Habilidades e Aptidões</h3>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1 pl-4">
+                                <li>Pensamento Lógico e Analítico</li>
+                                <li>Foco em Solução de Problemas (CRM)</li>
+                                <li>Desenvolvimento Web (Front-end e Back-end)</li>
+                                <li>Aprendizagem Rápida em Novas Tecnologias</li>
+                                <li>Proatividade e Visão de Negócios</li>
+                            </ul>
+                        </div>
+                        <!-- Vida Acadêmica -->
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Trajetória Acadêmica</h3>
+                            <p class="text-gray-600">
+                                Estudei em instituições renomadas como **Escola Seb Vila Velha, Colégio Salesiano, Colégio Darwin e Escola Nep** durante o Ensino Fundamental e Médio.
+                                Atualmente, sou estudante de **Sistemas de Informação na Universidade Vila Velha (UVV)**. Já complementei minha formação com cursos de **Programação e Informática Avançada**.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">O que estou aprendendo (Exemplo de Matérias)</h3>
+                    <p class="text-sm text-gray-600">
+                        *Em uma fase acadêmica onde o foco é o desenvolvimento de sistemas, as matérias atuais são cruciais para aprimorar minhas habilidades em arquitetura de software e experiência do usuário.*
+                    </p>
+                    <div class="bg-gray-100 p-4 rounded-lg mt-4 shadow-inner">
+                        <p class="font-bold text-sm text-indigo-600">Matéria Exemplo (Módulo Atual):</p>
+                        <p class="text-gray-700 text-sm">
+                            **Desenvolvimento Web Avançado:** Foco em arquiteturas de microsserviços e segurança de APIs.
+                            **Banco de Dados NoSQL:** Aprendendo a modelar dados para alta performance e escalabilidade.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mídia Pessoal e Hobbies (Vídeo e Áudio) -->
+            <div class="mt-12 pt-8 border-t border-indigo-200">
+                <h2 class="text-3xl font-bold mb-6 text-indigo-700">Lifestyle & Inspiração</h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Hobbies -->
+                    <div class="bg-indigo-50 p-6 rounded-xl shadow-md">
+                        <h3 class="text-xl font-semibold mb-2 flex items-center">
+                            <svg class="w-6 h-6 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                            Hobby Principal: Surfar
+                        </h3>
+                        <p class="text-gray-700">
+                            O surf é meu refúgio e minha forma de recarregar as energias. O contato com o mar traz a clareza necessária para a resolução de problemas complexos em código.
+                        </p>
+                    </div>
+
+                    <!-- Documentários e Vídeo (Obrigatório) -->
+                    <div class="md:col-span-2 bg-indigo-50 p-6 rounded-xl shadow-md">
+                        <h3 class="text-xl font-semibold mb-3 flex items-center">
+                            <svg class="w-6 h-6 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                            Vídeo Favorito (Documentários)
+                        </h3>
+                        <!-- Iframe de Exemplo (Documentário de Tecnologia) -->
+                        <div class="relative overflow-hidden w-full" style="padding-top: 56.25%">
+                            <!-- LINK ATUALIZADO COM O DOCUMENTÁRIO -->
+                            <iframe class="absolute top-0 left-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/V2POyQVQuzA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2">Documentário inspirador que amplia a visão sobre desenvolvimento e tecnologia, fundamental para o meu crescimento profissional.</p>
+                    </div>
+                </div>
+
+                <!-- Música Preferida (Obrigatório: Spotify Embed) -->
+                <div class="mt-6 bg-indigo-50 p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 flex items-center">
+                        <!-- Ícone do Spotify (SVG) -->
+                        <svg class="w-6 h-6 mr-2 text-indigo-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.39 16.32c-.17.276-.576.368-.85.195-2.31-1.428-5.242-1.748-8.666-.997-.308.067-.61-.157-.676-.465-.067-.308.157-.61.465-.676 3.738-.81 6.945-.443 9.53 1.13.273.172.365.578.192.854zM16.59 13.918c-.207.336-.643.435-.979.227-2.618-1.587-6.524-2.062-9.74-.954-.37.124-.744-.087-.866-.456-.124-.37.087-.745.456-.866 3.59-.115 7.7.464 10.612 2.298.337.208.435.645.228.98zM17.962 11.51c-.246.397-.733.518-1.13.272-3.036-1.87-7.618-2.45-10.743-1.39-2.312.766-3.834.733-5.21-.902-.375.14-.52.576-.38.95.772 1.487 2.016 1.7 4.137 1.83.693.044 1.385-.24 1.828-.737.443-.496.67-1.144.67-1.84 0-1.127-.79-2.015-1.782-2.193-.993-.18-1.782-.016-2.516.685-.733.7-1.13 1.637-1.13 2.55 0 1.054.54 1.84 1.258 2.227.18.09.38.08.55-.02.167-.103.266-.27.266-.453v-.004c0-.18-.088-.344-.258-.456-.566-.36-.934-.913-.934-1.55 0-.54.275-.95.736-1.22.46-.275 1.053-.275 1.51 0 .61.36.953 1.006.953 1.7 0 .54-.275.95-.736 1.22-.46.275-1.053.275-1.51 0-.61-.36-.953-1.006-.953-1.7v-.004z"/></svg>
+                        Música Preferida (Spotify)
+                    </h3>
+                    <!-- Player Embed do Spotify (Substituindo o áudio padrão) -->
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7CdoE8U5DwrwCaLoyf3ME0?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <p class="text-sm text-gray-500 mt-2">Música que me ajuda a manter o foco e a produtividade durante a codificação.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. CURRÍCULO PROFISSIONAL -->
+    <section id="curriculo" class="section bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-indigo-700 mb-8 text-center">Currículo & Experiência</h2>
+            
+            <div class="bg-white p-6 rounded-xl shadow-xl">
+                <p class="text-gray-700 mb-6">
+                    Abaixo, detalho as minhas experiências profissionais, incluindo projetos e atuações onde pude aplicar minhas habilidades em programação e análise de sistemas.
+                </p>
+
+                <!-- Tabela de Currículo (Obrigatório) -->
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-indigo-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-indigo-600 uppercase tracking-wider rounded-tl-lg">Período</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-indigo-600 uppercase tracking-wider">Cargo / Função</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-indigo-600 uppercase tracking-wider rounded-tr-lg">Principais Responsabilidades (Fictício)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <!-- Trabalho Fictício 1 -->
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2023 - Presente</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Desenvolvedor Júnior (Soft House)</td>
+                                <td class="px-6 py-4 text-sm text-gray-700">
+                                    Desenvolvimento de Landing Pages e websites institucionais. Manutenção e atualização de CRMs baseados em requisitos de clientes. Foco em otimização de performance e SEO.
+                                </td>
+                            </tr>
+                            <!-- Trabalho Fictício 2 -->
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2022 - 2023</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Estagiário de TI</td>
+                                <td class="px-6 py-4 text-sm text-gray-700">
+                                    Suporte técnico e configuração de redes. Automação de tarefas administrativas utilizando Python e Bash.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. GITHUB -->
+    <section id="github" class="section bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-extrabold text-indigo-700 mb-8">Meus Projetos no GitHub</h2>
+
+            <div class="bg-indigo-50 p-8 rounded-xl shadow-xl max-w-2xl mx-auto">
+                <p class="text-gray-700 mb-6 text-lg">
+                    Confira meu portfólio de código aberto e projetos de estudo. É o melhor lugar para acompanhar minha experiência em tempo real e ver a qualidade do meu trabalho.
+                </p>
+                <!-- Imagem do GitHub (Substituída) -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS135ZhgUsOSFlg7VL2VKrWwS9c6JG_xmcgTg&s" alt="Novo ícone do GitHub" class="mx-auto w-32 h-32 mb-6 rounded-lg shadow-md object-cover">
+                
+                <!-- Link Externo (Obrigatório) -->
+                <!-- LINK DO GITHUB ATUALIZADO AQUI -->
+                <a href="https://github.com/pedro494" target="_blank" class="cta-button bg-gray-800 text-white px-8 py-3 rounded-xl font-bold hover:bg-gray-700 inline-flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.799 8.205 11.385.6.11.82-.258.82-.577 0-.28-.01-1.018-.016-2.004-3.338.724-4.042-1.61-4.042-1.61-.546-1.382-1.332-1.754-1.332-1.754-1.09-.744.082-.729.082-.729 1.205.085 1.838 1.234 1.838 1.234 1.07 1.834 2.807 1.304 3.49.998.108-.776.42-1.304.762-1.605-2.665-.304-5.466-1.334-5.466-5.932 0-1.31.468-2.38.1.58-.33-1.642-1.074-1.61-1.074-1.61-.87-.22-1.89-.092-1.89-.092-.958.648-.07.994-.07.994 1.066.837 1.62.115 1.62.115.105-.712.413-1.304.797-1.61-2.936-.334-6.01-1.46-6.01-5.932 0-1.31.468-2.38 1.234-3.21-.122-.304-.534-1.522.106-3.176 0 0 1-.32 3.3.123 1.967-.545 4.053-.545 6.02-.008 2.296-.443 3.3-.123 3.3-.123.64 1.654.238 2.872.106 3.176.766.83 1.234 1.9 1.234 3.21 0 4.59-2.805 5.626-5.474 5.923.424.363.81.107.81 1.076 0 1.94-.016 3.92-.016 4.453 0 .323.21.69.825.577C19.562 21.799 23 17.302 23 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd"></path></svg>
+                    Visitar Meu GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SERVIÇOS E PREÇOS -->
+    <section id="servicos" class="section bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-indigo-700 mb-4 text-center">Seus Projetos, Meu Código.</h2>
+            <p class="text-center text-xl text-gray-600 mb-10">
+                Especializado em soluções de alto impacto para **Restaurantes e CRMs**.
+            </p>
+
+            <!-- Tabela de Preços (Obrigatório) -->
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-xl shadow-xl">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Tabela de Investimento</h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-indigo-200 border border-indigo-200 rounded-lg">
+                            <thead class="bg-indigo-50">
+                                <tr>
+                                    <th class="px-4 py-3 text-left text-xs font-medium text-indigo-700 uppercase tracking-wider w-1/4">Tipo de Site</th>
+                                    <th class="px-4 py-3 text-left text-xs font-medium text-indigo-700 uppercase tracking-wider w-1/4">Páginas</th>
+                                    <th class="px-4 py-3 text-left text-xs font-medium text-indigo-700 uppercase tracking-wider w-1/2">Recursos Inclusos & Preço</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-100">
+                                <!-- Estática Básica -->
+                                <tr class="hover:bg-indigo-50 transition duration-150">
+                                    <td class="px-4 py-4 whitespace-nowrap text-base font-medium text-gray-900">Estática</td>
+                                    <td class="px-4 py-4 whitespace-nowrap text-base text-gray-700">1 a 2 páginas (HTML/CSS)</td>
+                                    <td class="px-4 py-4 text-sm text-gray-600">
+                                        <span class="font-bold text-indigo-600">R$ 1.500,00</span>
+                                        <span class="block text-xs italic">Design responsivo, Hospedagem por 1 mês (Exemplo).</span>
+                                    </td>
+                                </tr>
+                                <!-- Estática Padrão -->
+                                <tr class="hover:bg-indigo-50 transition duration-150">
+                                    <td class="px-4 py-4 whitespace-nowrap text-base font-medium text-gray-900">Estática</td>
+                                    <td class="px-4 py-4 whitespace-nowrap text-base text-gray-700">3 a 5 páginas</td>
+                                    <td class="px-4 py-4 text-sm text-gray-600">
+                                        <span class="font-bold text-indigo-600">R$ 2.500,00</span>
+                                        <span class="block text-xs italic">Inclusão de galeria de fotos e formulário simples.</span>
+                                    </td>
+                                </tr>
+                                <!-- Estática Grande -->
+                                <tr class="hover:bg-indigo-50 transition duration-150">
+                                    <td class="px-4 py-4 whitespace-nowrap text-base font-medium text-gray-900">Estática</td>
+                                    <td class="px-4 py-4 whitespace-nowrap text-base text-gray-700">Mais de 5 páginas</td>
+                                    <td class="px-4 py-4 text-sm text-gray-600">
+                                        <span class="font-bold text-indigo-600">Valor a Negociar</span>
+                                        <span class="block text-xs italic">Orçamento personalizado conforme complexidade.</span>
+                                    </td>
+                                </tr>
+                                <!-- Dinâmica / Avançada (Valor Único) -->
+                                <tr class="bg-indigo-100 hover:bg-indigo-200 transition duration-150">
+                                    <td class="px-4 py-4 whitespace-nowrap text-base font-bold text-indigo-800">Dinâmica / Avançada</td>
+                                    <td class="px-4 py-4 whitespace-nowrap text-base font-bold text-indigo-800">Customizável</td>
+                                    <td class="px-4 py-4 text-sm text-gray-700">
+                                        <span class="font-extrabold text-red-600">A partir de R$ 3.500,00</span>
+                                        <span class="block text-xs italic">Sites com Painel Administrativo, Integração com API, Captura de Dados/Leads (CRM), Lógica de Negócios e Back-end.</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="mt-6 text-sm text-gray-500 italic text-center">
+                        *Os valores acima são estimativas para o desenvolvimento e não incluem custos de domínio e hospedagem permanentes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. CONTATO (FORMULÁRIO DE CAPTURA DE LEADS) -->
+    <section id="contato" class="section bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-indigo-700 mb-4 text-center">Vamos Conversar?</h2>
+            <p class="text-center text-xl text-gray-600 mb-10">
+                Preencha o formulário abaixo para receber uma proposta personalizada.
+            </p>
+
+            <!-- Formulário de Contato com Vários Tipos de Campo (Obrigatório) -->
+            <div class="max-w-lg mx-auto bg-indigo-50 p-8 rounded-xl shadow-2xl">
+                <form onsubmit="handleSubmit(event)">
+                    <!-- Nome Completo (Textbox) -->
+                    <div class="mb-4">
+                        <label for="nome" class="block text-sm font-medium text-gray-700">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" required class="mt-1 block w-full px-4 py-2 border border-indigo-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+
+                    <!-- Telefone (Type tel) -->
+                    <div class="mb-4">
+                        <label for="telefone" class="block text-sm font-medium text-gray-700">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" required class="mt-1 block w-full px-4 py-2 border border-indigo-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+
+                    <!-- E-mail (Type email) -->
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-2 border border-indigo-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+
+                    <!-- Pessoa Física ou Jurídica (Radio Buttons) -->
+                    <div class="mb-6">
+                        <span class="block text-sm font-medium text-gray-700 mb-2">Você é:</span>
+                        <div class="flex items-center space-x-4">
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="tipo_pessoa" value="PF" required class="text-indigo-600 focus:ring-indigo-500">
+                                <span class="ml-2 text-gray-700">Pessoa Física</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="tipo_pessoa" value="PJ" class="text-indigo-600 focus:ring-indigo-500">
+                                <span class="ml-2 text-gray-700">Pessoa Jurídica</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Opção de Melhor Horário de Contato (Combobox/Select) -->
+                    <div class="mb-4">
+                        <label for="horario" class="block text-sm font-medium text-gray-700">Melhor Horário para Contato</label>
+                        <select id="horario" name="horario" class="mt-1 block w-full px-4 py-2 border border-indigo-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                            <option value="">Selecione</option>
+                            <option value="manha">Manhã (09h às 12h)</option>
+                            <option value="tarde">Tarde (14h às 18h)</option>
+                            <option value="noite">Noite (18h às 21h)</option>
+                        </select>
+                    </div>
+
+                    <!-- Tipo de Serviço Desejado (Checkbox/Multiple Select) -->
+                    <div class="mb-6">
+                        <span class="block text-sm font-medium text-gray-700 mb-2">Serviço de Interesse (Pode selecionar mais de um):</span>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" name="servico" value="Estatica" class="text-indigo-600 rounded focus:ring-indigo-500">
+                                <span class="ml-2 text-gray-700">Site Estático (Landing Page ou Institucional)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="servico" value="Dinamica" class="text-indigo-600 rounded focus:ring-indigo-500">
+                                <span class="ml-2 text-gray-700">Site Dinâmico (CRM ou Sistema Web)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="servico" value="Restaurante" class="text-indigo-600 rounded focus:ring-indigo-500">
+                                <span class="ml-2 text-gray-700">Site/Sistema para Restaurante</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Descrição (Textarea) -->
+                    <div class="mb-6">
+                        <label for="descricao" class="block text-sm font-medium text-gray-700">Breve Descrição do Projeto Desejado</label>
+                        <textarea id="descricao" name="descricao" rows="4" required class="mt-1 block w-full px-4 py-2 border border-indigo-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-button w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-xl hover:bg-indigo-700">
+                        Enviar Solicitação de Proposta
+                    </button>
+                    
+                    <!-- Área de Mensagem (Feedback) -->
+                    <div id="feedback-message" class="mt-4 p-3 rounded-lg bg-green-100 text-green-700 text-center hidden"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-white py-6 mt-10">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2024 Pedro Henrique SIbien Cordeiro | Soft House. Todos os direitos reservados.</p>
+            <p class="mt-2">Desenvolvido com foco em alta conversão e experiência do usuário.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript para o Formulário e Mensagem de Feedback -->
+    <script>
+        /**
+         * Simula o envio de dados do formulário e mostra uma mensagem de feedback.
+         * IMPORTANTE: Em um ambiente de produção, este código enviaria os dados para um
+         * servidor (Backend/API) para processamento. Aqui, ele apenas simula o sucesso.
+         */
+        function handleSubmit(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            
+            const form = event.target;
+            const data = new FormData(form);
+            const output = {};
+            for (const [key, value] of data.entries()) {
+                // Para checkboxes, verifica se já existe e cria um array
+                if (output[key] && Array.isArray(output[key])) {
+                     output[key].push(value);
+                } else if (output[key]) {
+                    output[key] = [output[key], value];
+                } else {
+                    output[key] = value;
+                }
+            }
+
+            // Simula o processamento dos dados
+            console.log("Dados do Lead Capturados:", output);
+            
+            // Mensagem de Feedback (Substitui o alert())
+            const feedbackElement = document.getElementById('feedback-message');
+            feedbackElement.innerText = 'Sua solicitação foi enviada com sucesso! Em breve entraremos em contato com a sua proposta.';
+            feedbackElement.classList.remove('hidden');
+            feedbackElement.classList.add('bg-green-100');
+            feedbackElement.classList.remove('bg-red-100');
+            
+            form.reset(); // Limpa o formulário após o "envio"
+
+            // Oculta a mensagem após 5 segundos
+            setTimeout(() => {
+                feedbackElement.classList.add('hidden');
+            }, 5000);
+        }
+
+        // Adiciona um evento de scroll para destacar o link ativo na navegação (Extra)
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('header nav a');
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('bg-indigo-600', 'text-white', 'font-bold');
+                link.classList.add('hover:bg-indigo-100');
+                if (link.href.includes(current)) {
+                    link.classList.add('bg-indigo-600', 'text-white', 'font-bold');
+                    link.classList.remove('hover:bg-indigo-100');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
